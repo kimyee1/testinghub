@@ -1,0 +1,16 @@
+name = "blockless-hub"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "blockless-hub_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "blockless-hub.wasm"
+command = "npm run build:release"
